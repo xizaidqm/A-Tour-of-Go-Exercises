@@ -102,9 +102,9 @@ func main(){
 
 	//将初始的爬取地址设为起始点
 
-	signal.v["https://golang.org"]=true
+	signal.v["https://golang.org/"]=true
 
-	Crawl(signal,"https://golang.org",4,fetcher)
+	Crawl(signal,"https://golang.org/",4,fetcher)
 
 	//需要设定时间的延迟，否则main函数结束了，其他线程的爬取还未结束
 
